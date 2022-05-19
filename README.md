@@ -5,12 +5,7 @@ There will be a login system to keep track of user scores and accomplishments.
 
 Technologies used:
 | Roles | Technology |
-| ----- | ---------- |
 | Database | MongoDB |
-| ----- | ---------- |
 | Back-End | Express (Node.js) |
-| ----- | ---------- |
 | Front-End | React |
-| ----- | ---------- |
 | Web Server | Node |
-| ----- | ---------- |
