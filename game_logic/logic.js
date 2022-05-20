@@ -29,21 +29,23 @@ module.exports = {
     },
 
     results: (player1, player2) =>{
-        let outcome1 = Object.keys(allOutcomes).filter((a, b) => {return (a == (player1.toLowerCase() + "vs" + player2.toLowerCase()))});
-        switch (allOutcomes[outcome1]){
+        let outcome = Object.keys(allOutcomes).filter((a, b) => {return (a == (player1.toLowerCase() + "vs" + player2.toLowerCase()))});
+        let result = ""
+        switch (allOutcomes[outcome]){
         case -1:
-            console.log("DRAW", outcome1);
+            result = "//**DRAW!**//";
             break;
         case 0:
-            console.log("Player 2 won!", outcome1);
+            result = "//**Player 2 won!**//";
             break;
         case 1:
-            console.log("Player 1 won!", outcome1);
+            result = "//**Player 1 won!**//";
             break;
         default:
-            console.log("Something went wrong!");
+            result = "Something went wrong...";
             break;
         }
+        return result;
     }
 /** -> testing logic
 let player1 = "rOcK", player2 = "rOcK";
