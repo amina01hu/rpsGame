@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const signuptemplate = new mongoose.Schema({
+const signuptemplate = new mongoose.Schema({ //schema for database collection
     fullName:{
         type:String,
         required:true
@@ -23,4 +23,4 @@ const signuptemplate = new mongoose.Schema({
     }
 })
 
-module.exports = mongoose.model('mytable', signuptemplate);
+module.exports = mongoose.model('mytable', signuptemplate); //add to mytable
