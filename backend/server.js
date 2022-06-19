@@ -13,7 +13,7 @@ mongoose.connect(process.env.DATABASE_ACCESS, () =>{
     console.log("Database connected!");
 })
 app.use(express.json()); //-> activates body parser
-app.use(cors()); //-> activates cors
+app.use(cors()); //-> allows us to connect to react
 
 app.get("/usersList", (req, res) =>{
     userModel.find({}, (err, result) => {
